@@ -46,10 +46,7 @@ C:23:30-08:30""")
         if worktime[i] == '0':
         # {0：工作日， 1：周末， 2：法定节假日}
             worktime_list.append(i)
-
-
-
-
+    # print(worktime_list)
 
 if __name__ == '__main__':
     main()
