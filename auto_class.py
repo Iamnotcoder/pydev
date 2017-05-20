@@ -12,7 +12,7 @@ import json
 #2017-04-05
 
 def main():
-    class_dir = {'A':"08:30-17:30", 'B':"15:30-23:30", 'C':"23:30-08:30"}
+    # class_dir = {'A':"08:30-17:30", 'B':"15:30-23:30", 'C':"23:30-08:30"}
     date_list = []
     print ("班次如下，请输入初始班次>: A|B|C")
     print ("""A:08:30-17:30
@@ -34,8 +34,6 @@ C:23:30-08:30""")
     while d <= end:
         date_list.append(d.strftime("%Y%m%d"))
         d += delta
-
-
     worktime_list = []
     for i in date_list:
         url = "http://www.easybots.cn/api/holiday.php?d=" + i
@@ -47,7 +45,20 @@ C:23:30-08:30""")
         # {0：工作日， 1：周末， 2：法定节假日}
             worktime_list.append(i)
     # print(worktime_list)
+    return date_list
+
+
+def class_loop():
+    L = len(main())
+    while True:
+        if start_class == 'a':
+            for i
+            sh.write(start_class)
+
+
 
 if __name__ == '__main__':
-    main()
+    # print(main())
+    # main()
+    class_loop()
 
