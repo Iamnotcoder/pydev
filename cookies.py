@@ -16,3 +16,8 @@ headers = {"User-Agent":"Mozilla/5.0"}
 r = s.get(url=url,headers=headers,cookies=cookies, verify=False)
 # print(s.get(url=url))
 print(r.text)
+
+
+
+
+
