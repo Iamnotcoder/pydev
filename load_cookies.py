@@ -6,10 +6,13 @@ __date__ = '2017/5/28'
 import requests
 
 
-def load_cookies():
-    with open('raw_cookies.txt') as f:
+def load_cookies(fname):
+    with open(fname) as f:
         cookies = {}
         for line in f.read().split(';'):
             key, val = line.strip().split('=', 1)
             cookies[key] = val
-print(cookies)
+    return cookies
+    # print(cookies)
+
+# load_cookies()
