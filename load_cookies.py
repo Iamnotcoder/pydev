@@ -13,5 +13,3 @@ def load_cookies(fname):
             key, val = line.strip().split('=', 1)
             cookies[key] = val
     return cookies
-
-# load_cookies()
